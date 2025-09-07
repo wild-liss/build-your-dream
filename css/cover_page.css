@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    background: black;
+}
+
+.body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.header-position, .circles-position {
+    display: flex;
+    justify-content: space-between;
+}
+.header-position {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.register-position, .circles-position {
+
+    position: relative;
+    z-index: 5;
+    width: 50%;
+}
+
+.register-position .circles {
+    margin-left: 40px;
+}
+
+.register-position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.promo {
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    z-index: 5;
+    position: relative;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: calc(100% - 200px);
+    height: 150px;
+    padding: 20px 0;
+    box-shadow:
+            0 -20px 20px -20px #e9daff, /* top */
+            0  20px 20px -20px #e9daff;  /* bottom */
+}
+
+.head-img {
+    display: flex;
+    flex-direction: row;
+}
+
+.head-img img {
+    position: absolute;
+    opacity: 0.1;
+    filter: blur(3px);
+    -webkit-user-drag: none;
+
+}
+
+.head-img img:first-child {
+    left: -50px;
+    width: 900px;
+}
+
+.head-img img:last-child {
+    right: 0;
+    width: 800px;
+    top: -150px;
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.image-block {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-style {
+    width: 49%;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position {
+    position: relative;
+}
+
+.empty {
+    width: 50px;
+}
+
+.category {
+    position: relative;
+    z-index: 5;
+    color: transparent;
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.image-style:hover .category {
+    color: white;
+    text-decoration: none;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+.image-style:hover .image-block {
+    filter: blur(4px);
+}
