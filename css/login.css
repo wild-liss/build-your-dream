@@ -81,8 +81,19 @@ input {
 }
 
 @media (max-width: 1000px) {
-    .head-img {
-        display: none;
+    .head-img img {
+        filter: blur(4px);
+    }
+
+    .head-img img:first-child {
+        left: -50px;
+        width: 400px;
+    }
+
+    .head-img img:last-child {
+        right: 0;
+        width: 400px;
+        top: 300px;
     }
 }
 
