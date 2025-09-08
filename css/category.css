@@ -44,6 +44,23 @@ body {
     top: -150px;
 }
 
+@media (max-width: 1000px) {
+    .head-img img {
+        filter: blur(3px);
+    }
+
+    .head-img img:first-child {
+        left: -50px;
+        width: 400px;
+    }
+
+    .head-img img:last-child {
+        right: 0;
+        width: 400px;
+        top: 300px;
+    }
+}
+
 .header-position, .circles-position {
     display: flex;
     justify-content: space-between;
@@ -53,6 +70,13 @@ body {
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+    .header-position {
+        margin-right: 20px;
+        margin-left: 20px
+    }
 }
 
 .register-position, .circles-position {
@@ -65,9 +89,34 @@ body {
     margin-left: 40px;
 }
 
+@media (max-width: 1000px) {
+    .register-position .circles {
+        margin-left: 20px;
+    }
+}
+
 .register-position {
     display: flex;
     justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+    .register-position, .circles-position {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+    }
+
+    .register-position {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-position {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .promo {
@@ -84,6 +133,18 @@ body {
     width: 100%;
     padding: 20px 0;
     box-shadow: 0 -20px 20px -20px #e9daff, /* top */ 0 20px 20px -20px #e9daff; /* bottom */
+}
+
+@media (max-width: 1000px) {
+    .promo{
+        font-size: 40px;
+        height: 60px;
+        padding: 20px 0;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 a {
@@ -104,6 +165,19 @@ a {
     flex-direction: column;
 }
 
+@media (max-width: 1000px) {
+    .general-position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .column {
+        width: 80%;
+    }
+}
+
 .block {
     width: 100%;
     border-radius: 30px;
@@ -119,7 +193,6 @@ a {
     display: block;
     position: relative;
     z-index: 1;
-
 }
 
 .block:hover img {
@@ -138,7 +211,13 @@ a {
     text-align: center;
     height: 40px;
     border-radius: 10px;
+}
 
+@media (max-width: 1000px) {
+    .save{
+        background: #dcc8f6;
+        color: white;
+    }
 }
 
 .block:hover .save {
