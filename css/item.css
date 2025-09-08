@@ -44,6 +44,23 @@ body {
     top: -150px;
 }
 
+@media (max-width: 1000px) {
+    .head-img img {
+        filter: blur(3px);
+    }
+
+    .head-img img:first-child {
+        left: -50px;
+        width: 400px;
+    }
+
+    .head-img img:last-child {
+        right: 0;
+        width: 400px;
+        top: 300px;
+    }
+}
+
 .header-position, .circles-position {
     display: flex;
     justify-content: space-between;
@@ -52,6 +69,13 @@ body {
     margin-right: 100px;
     margin-left: 100px;
     margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+    .header-position {
+        margin-right: 20px;
+        margin-left: 20px
+    }
 }
 
 .register-position, .circles-position {
@@ -64,9 +88,46 @@ body {
     margin-left: 40px;
 }
 
+@media (max-width: 1000px) {
+    .register-position .circles {
+        margin-left: 20px;
+    }
+}
+
 .register-position {
     display: flex;
     justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+    .register-position, .circles-position {
+        position: relative;
+        z-index: 5;
+        width: 100%;
+    }
+
+    .register-position {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-position {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .promo{
+        font-size: 40px;
+        height: 60px;
+        padding: 20px 0;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .promo {
@@ -108,6 +169,23 @@ a {
     flex-direction: column;
 }
 
+.block-left {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-left {
+        width: 100%;
+    }
+}
+
 .image-container {
     position: relative;
     z-index: 3;
@@ -116,6 +194,12 @@ a {
     overflow: hidden;
     border-radius: 30px;
     margin-bottom: 15px;
+}
+
+@media (max-width: 1000px) {
+    .image-container {
+        height: 550px;
+    }
 }
 
 .image-container img {
