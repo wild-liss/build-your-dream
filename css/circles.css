@@ -7,6 +7,12 @@
     text-decoration: none;
 }
 
+@media (max-width: 1000px) {
+    .circles{
+        font-size: 10px;
+    }
+}
+
 .circles span {
     transition: all 0.3s;
 }
