@@ -17,7 +17,7 @@ body {
     margin-right: 100px;
 }
 
-@media (max-width: 1000px ) {
+@media (max-width: 1000px) {
     .body{
         margin-left: 20px;
         margin-right: 20px;
@@ -116,7 +116,7 @@ body {
             0  20px 20px -20px #e9daff;  /* bottom */
 }
 
-@media (max-width: 1000px ) {
+@media (max-width: 1000px) {
     .promo{
         font-size: 40px;
         font-weight: 400;
